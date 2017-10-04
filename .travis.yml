@@ -5,6 +5,7 @@ python:
 
 install:
   - "sudo pip install -r requerimientos.txt"
+  - "sudo pip install --upgrade six"
 
 before_script:
   - "autopep8 -ir *"
