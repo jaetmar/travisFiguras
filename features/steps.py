@@ -2,6 +2,10 @@
 from lettuce import step, world
 from figuras import Figuras
 
+@step(u'cuando realizo la operación')
+def cuando_realizo_la_operacion(step):
+    pass
+
 @step(u'entonces obtengo el area "([^"]*)"')
 def entonces_obtengo_el_area_group1(step, res):
     assert str(world.fig.obtener_area()) == res, 'Esperado: ' + res + ', obtenido: ' + str(world.fig.obtener_area())
