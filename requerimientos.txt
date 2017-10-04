@@ -2,3 +2,5 @@ flake8
 autopep8
 lettuce
 coverage
+--upgrade six
+-U setuptools
